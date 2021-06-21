@@ -1,6 +1,4 @@
 @import "config";
-@import "utilites";
-@import "buttons";
 
 * {
   box-sizing: border-box;
@@ -24,7 +22,7 @@ a {
 
 .showcase {
   @include set-background($primary-color);
-  height: 600px;
+  height: 100vh;
 
   nav {
     display: flex;
@@ -54,6 +52,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 30%;
 
     img {
       width: 50%;
@@ -65,3 +64,7 @@ a {
     }
   }
 }
+
+@import "utilites";
+@import "buttons";
+@import "mobile";
